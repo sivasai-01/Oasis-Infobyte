@@ -1,20 +1,20 @@
-const dis = document.querySelector("#dis");
-const but = document.querySelectorAll("button");
+const display = document.querySelector("#display");
+const buttons = document.querySelectorAll("button");
 
-but.forEach((items) => {
-  items.onclick = () => {
-    if (items.id == "clear") {
-      dis.innerText = "";
-    } else if (items.id == "backspace") {
-      let string = dis.innerText.toString();
-      dis.innerText = string.substr(0, string.length - 1);
-    } else if (dis.innerText != "" && items.id == "equal") {
-      dis.innerText = eval(dis.innerText);
-    } else if (dis.innerText == "" && items.id == "equal") {
-      dis.innerText = "Empty!";
-      setTimeout(() => (dis.innerText = ""), 2000);
+buttons.forEach((item) => {
+  item.onclick = () => {
+    if (item.id == "clear") {
+      display.innerText = "";
+    } else if (item.id == "backspace") {
+      let string = display.innerText.toString();
+      display.innerText = string.substr(0, string.length - 1);
+    } else if (display.innerText != "" && item.id == "equal") {
+      display.innerText = eval(display.innerText);
+    } else if (display.innerText == "" && item.id == "equal") {
+      display.innerText = "Empty!";
+      setTimeout(() => (display.innerText = ""), 2000);
     } else {
-      dis.innerText += items.id;
+      display.innerText += item.id;
     }
   };
 });
