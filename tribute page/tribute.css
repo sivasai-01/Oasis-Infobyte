@@ -1,5 +1,5 @@
 body {
-    background-color: orange;
+    background-color: rgb(25, 160, 233);
     margin:300px;
     
 }
@@ -9,7 +9,7 @@ shadow to the title */
 #title {
     padding-top:20px;
     text-align: center;
-    text-shadow: 5px 5px 10px white;
+    text-shadow: 5px 5px 10px rgb(228, 228, 22);
     font-size: 7vh;
 }
 
@@ -25,7 +25,7 @@ size of the image-caption */
 #caption {
     font-size: 17px;
     font-family: Gill Sans;
-    color: black;
+    color: rgb(15, 16, 15);
 }
 
 /* Styling the content of the page like-
@@ -50,5 +50,5 @@ h1.title-APJ {
 /* Styling the link provided at the end */
 #tribute-link {
     text-decoration: none;
-    color: black;
+    color: rgb(176, 25, 25);
 }
